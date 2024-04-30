@@ -3,4 +3,7 @@ pull_request_rules:
     conditions:
       - "#commits-behind >= 1"
     actions:
-      rebase:
+      github_actions:
+        workflow:
+          dispatch:
+            - workflow: rebase.yml
