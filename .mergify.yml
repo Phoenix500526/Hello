@@ -1,0 +1,6 @@
+pull_request_rules:
+  - name: rebase pull request when it's more than 10 commits behind main
+    conditions:
+      - "#commits-behind >= 1"
+    actions:
+      rebase:
